@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Cards() {
+function Cards(props) {
+    console.log(props); 
+
     return (
-        <h1>
-            Cards
-        </h1>
+        <h1>Cards</h1>
     )
 }
 
