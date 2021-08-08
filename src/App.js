@@ -13,7 +13,6 @@ class App extends React.Component {
 
     async componentDidMount() {
         const fetchedData = await fetchData();
-
         this.setState({ data: fetchedData });
     }
 
@@ -23,10 +22,9 @@ class App extends React.Component {
 
         // set the state
         this.setState({ data: fetchedData, country: country });
-    }
+    } 
 
     render() {
-
         const { data, country } = this.state;
         return (
             <div className={styles.container}>
